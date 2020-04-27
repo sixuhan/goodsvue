@@ -1,11 +1,11 @@
-import Vue from 'vue';
-import router from 'vue-router';
+import vue from 'vue'
+import router from 'vue-router'
 
-Vue.use(router)
+vue.use(router)
 
 export default new router({
-    mode:'history',
-    routes:[
+    mode: 'history',
+    routes: [
         {
             path: '/home',
             component:() => import('@/pages/home.vue')
@@ -13,6 +13,22 @@ export default new router({
         {
             path: '/page1',
             component:() => import('@/pages/page1.vue')
+        },
+        {
+            path: '/login',
+            component:() => import('@/pages/login.vue')
+        },
+        {
+            path: '/classify',
+            component:() => import('@/pages/classify.vue')
+        },
+        {
+            path: '/my',
+            component:() => import('@/pages/my.vue')
+        },
+        {
+            path: '/buy',
+            component:() => import('@/pages/buy.vue')
         }
     ]
 })
