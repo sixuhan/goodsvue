@@ -1,14 +1,6 @@
 <template>
   <div id="app">
-    <!--<img alt="Vue logo" src="./assets/logo.png">
-    <div>
-    <router-link to="/home">to home</router-link>
-    </div>
-    <div>
-      <router-link to="/page1">to page1</router-link>
-    </div>-->
     <router-view />
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   </div>
 </template>
 
@@ -30,6 +22,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
