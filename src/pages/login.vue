@@ -2,7 +2,7 @@
   <div class="content">
     <van-tabs v-model="active">
       <van-tab title="登录">
-        <van-form @submit="onSubmit" >
+        <van-form @submit="onSubmit">
           <van-field
             v-model="username"
             name="用户名"
@@ -24,7 +24,7 @@
         </van-form>
       </van-tab>
       <van-tab title="注册">
-           <van-form @submit="onSubmit" >
+        <van-form @submit="onSubmit">
           <van-field
             v-model="username"
             name="请输入用户名"
@@ -66,14 +66,25 @@
 
 <script>
 export default {
-  
+  data() {
+    return {
+      active: 1,
+      password:'',
+      username:'',
+      email:''
+    };
+  },
+  methods:{
+    onSubmit(){
+
+    }
+  }
 };
 </script>
 
 <style>
-
-body{
-  background-image:url("../static/picture/login.jpg");
+body {
+  background-image: url("../static/picture/login.jpg");
 }
 .content {
   width: 100%;

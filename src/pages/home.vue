@@ -15,6 +15,11 @@
 <script>
 import { test } from "@/api";
 export default {
+  data(){
+    return{
+      value:''
+    }
+  },
   mounted(){
     test().then(function(res){
       console.log(res.data)
