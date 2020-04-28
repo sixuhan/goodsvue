@@ -13,7 +13,13 @@
 </template>
 
 <script>
+import { test } from "@/api";
 export default {
+  mounted(){
+    test().then(function(res){
+      console.log(res.data)
+    })
+  }
 };
 </script>
 
